@@ -89,17 +89,19 @@ const cancelDia = ()=>{
   
     }
     &_body{
-        border: 1px solid black;
+      
         flex: 5;
         margin: 0 auto;
         width: 100%;
     }
     &_footer{
-        border: 1px solid black;
+       
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-bottom-left-radius: 20px ;
+        border-bottom-right-radius: 20px ;
     }
    
            
