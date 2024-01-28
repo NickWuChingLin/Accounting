@@ -15,7 +15,7 @@ const onClick = ()=>{
 .basic_btn{
     @apply rd-20px ;
     padding: 4px 44px;
-    /* background-color: theme('colors.disableBtn'); */
+    /* background-color: theme('colors.btnBackground'); */
     color:theme('colors.textColor');
     cursor: pointer;
 }
