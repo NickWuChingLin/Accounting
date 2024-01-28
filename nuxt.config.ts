@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: '水哥彭湃',
+      title: '記帳日記',
 
     }
   },

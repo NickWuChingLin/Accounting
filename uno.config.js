@@ -12,8 +12,12 @@ const theme = {
         'finishCard': '#D9D9D980'
     }
 }
+
 export default defineConfig({
     theme,
+    shortcuts: {
+        'title1': 'font-size-28px font-weight-700;'
+    },
     transformers: [
         transformerDirectives(),
     ],

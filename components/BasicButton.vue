@@ -1,10 +1,10 @@
 <template>
-    <button :class="`basic_btn bg-${btnBg}`" @click="onClick">{{ label }}</button>
+    <button :class="`basic_btn bg-${btnBg}`" @click="onClick" >{{ label }}</button>
 </template>
 <script lang="ts" setup>
 import {ref} from 'vue'
 const title = defineProps(['label','btnBg'])
-const edit = ref('取消')
+const edit = ref(false)
 const emit = defineEmits(['click'])
 const onClick = ()=>{
     emit('click',edit.value)
@@ -16,6 +16,7 @@ const onClick = ()=>{
     @apply rd-20px ;
     padding: 4px 44px;
     /* background-color: theme('colors.disableBtn'); */
-    color:theme('colors.textColor')
+    color:theme('colors.textColor');
+    cursor: pointer;
 }
 </style>

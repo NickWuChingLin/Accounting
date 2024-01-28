@@ -1,11 +1,8 @@
 <template>
-  <nuxt-layout>
-    <nuxt-page></nuxt-page>
-  </nuxt-layout>
-
- 
+    <basic-dialog></basic-dialog>
+    <basic-button label="編輯" btnBg="btnBackground" />
+    <basic-button label="查看" btnBg="btnBackground" />
 </template>
-
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { useLocalStorage, useMouse, usePreferredDark } from '@vueuse/core'
@@ -20,7 +17,3 @@ const title = ref({
 })
 
 </script>
-
-<style>
-
-</style>
