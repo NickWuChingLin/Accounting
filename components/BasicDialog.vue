@@ -2,13 +2,13 @@
     <div v-if="isOpen">
         <!-- 彈窗內容 -->
         <div class="diaLog">
-            <div class="diaLog_head">
-                <h1 class="title1 diaLog_head_title">{{ titleText }}</h1>
+            <div class="diaLog__head">
+                <h1 class="diaLog__title">{{ titleText }}</h1>
             </div>
-            <div class="diaLog_body">
+            <div class="diaLog__body">
                 <slot name="body">範例一</slot>
             </div>
-            <div class="diaLog_footer">
+            <div class="diaLog__footer">
                 <slot name="footer">123</slot>
             </div>
 
@@ -58,7 +58,6 @@ const cancelDia = () => {
     height: 100%;
     background-color: #000000C2;
     z-index: 0;
-
 }
 
 .diaLog {
@@ -76,30 +75,26 @@ const cancelDia = () => {
     transform: translate(-50%, -50%);
     z-index: 1;
 
-    &_head {
+    &__head {
         width: 358px;
         height: 73px;
         background-color: theme('colors.main');
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-
-        &_title {
-            @apply flex flex-items-center flex-justify-center;
-            color: theme('colors.textColor');
-            @apply w-100% h-100%;
-        }
-
     }
 
-    &_body {
+    &__title {
+        @apply title1 flex flex-items-center flex-justify-center w-100% h-100%;
+        color: theme('colors.textColor');
+    }
 
+    &__body {
         flex: 5;
         margin: 0 auto;
         width: 100%;
     }
 
-    &_footer {
-
+    &__footer {
         flex: 1;
         display: flex;
         justify-content: center;
@@ -109,4 +104,5 @@ const cancelDia = () => {
     }
 
 
-}</style>
+}
+</style>
