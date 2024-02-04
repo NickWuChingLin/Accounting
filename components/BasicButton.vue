@@ -1,5 +1,5 @@
 <template>
-    <button :class="`basic_btn bg-${btnBg}`" @click="onClick" >{{ label }}</button>
+    <button :class="`basic__btn bg-${btnBg}`" @click="onClick" >{{ label }}</button>
 </template>
 <script lang="ts" setup>
 import {ref} from 'vue'
@@ -12,7 +12,7 @@ const onClick = ()=>{
 </script>
 
 <style>
-.basic_btn{
+.basic__btn{
     @apply rd-20px ;
     padding: 4px 44px;
     /* background-color: theme('colors.btnBackground'); */
